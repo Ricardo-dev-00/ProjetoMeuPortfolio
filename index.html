@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Ricardo Vieira, desenvolvedor Front-end com expertise em HTML, CSS, JavaScript, React, Next.js e Tailwind CSS. Busco minha primeira oportunidade como desenvolvedor.">
+    <meta name="keywords" content="desenvolvedor front-end, HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, São Luís, Maranhão">
+    <meta name="author" content="Ricardo Vieira">
+    <meta name="theme-color" content="#3b82f6">
+    
+    <!-- Open Graph / Meta Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricardo-portfolio.vercel.app">
+    <meta property="og:title" content="Ricardo Vieira - Desenvolvedor Front-end">
+    <meta property="og:description" content="Portfólio profissional com projetos em React, Next.js e mais. Conheça meu trabalho e vamos conversar!">
+    <meta property="og:image" content="https://ricardo-portfolio.vercel.app/images/header.jpg">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ricardo-portfolio.vercel.app">
+    <meta property="twitter:title" content="Ricardo Vieira - Desenvolvedor Front-end">
+    <meta property="twitter:description" content="Portfólio profissional com projetos em React, Next.js e mais.">
+    
+    <link rel="canonical" href="https://ricardo-portfolio.vercel.app">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%233b82f6'>RV</text></svg>">
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
     <title>Ricardo Vieira - Desenvolvedor Front-end</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = { darkMode: 'class' };
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" defer>
     <style>
         .parallax-header {
             background-attachment: fixed;
@@ -156,7 +183,7 @@
                     <!-- Botão Download Currículo -->
                     <div>
                         <a 
-                            href="#" 
+                            href="./assets/documents/Ricardo_Vieira_CV.pdf" 
                             download="Ricardo_Vieira_CV.pdf"
                             class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                         >
@@ -180,25 +207,28 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Projeto 1 -->
-                <a href="https://github.com/ricardo-vieira/projeto-1" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
+                <a href="https://github.com/Ricardo-dev-00/modulo-22/tree/main" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
-                            src="./images/projeto1.jpg" 
-                            alt="Projeto 1" 
+                            src="./images/projects/home_viagens.png" 
+                            alt="Portal de Viagens - Next.js"
+                            loading="lazy" 
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         >
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Nome do Projeto 1</h3>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Portal de Viagens</h3>
                         <p class="text-slate-600 dark:text-gray-300 leading-relaxed">
-                            Breve descrição do projeto explicando suas funcionalidades principais e tecnologias utilizadas.
+                            Portal de viagens interativo com destinos turísticos, curiosidades, atrações e recomendações culinárias ao redor do mundo.
                         </p>
                         <!-- Tags -->
                         <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300">HTML</span>
-                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300">CSS</span>
-                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300">JavaScript</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-zinc-200 text-zinc-800 dark:bg-zinc-800/60 dark:text-zinc-200">Next.js 16.1.1</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300">React 19.2.3</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">TypeScript</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300">Tailwind CSS 4</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300">CSS Modules</span>
                         </div>
                         <div class="mt-4 flex items-center text-blue-600 dark:text-blue-400 font-semibold">
                             Ver no GitHub <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
@@ -207,24 +237,28 @@
                 </a>
 
                 <!-- Projeto 2 -->
-                <a href="https://github.com/ricardo-vieira/projeto-2" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
+                <a href="https://github.com/Ricardo-dev-00/Pet-Style?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
-                            src="./images/projeto2.jpg" 
-                            alt="Projeto 2" 
+                            src="./images/projects/pet&style.png" 
+                            alt="Pet&Style - Loja para Pets"
+                            loading="lazy" 
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         >
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Nome do Projeto 2</h3>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Pet&Style</h3>
                         <p class="text-slate-600 dark:text-gray-300 leading-relaxed">
-                            Breve descrição do projeto explicando suas funcionalidades principais e tecnologias utilizadas.
+                            Loja fictícia com produtos exclusivos para pets. Visual moderno, responsivo e navegação intuitiva desenvolvida no módulo 14 do curso EBAC.
                         </p>
                         <!-- Tags -->
                         <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300">React</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300">HTML5</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300">CSS3</span>
                             <span class="px-3 py-1 text-sm font-medium rounded-full bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300">Tailwind CSS</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300">JavaScript</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300">Font Awesome</span>
                         </div>
                         <div class="mt-4 flex items-center text-blue-600 dark:text-blue-400 font-semibold">
                             Ver no GitHub <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
@@ -233,24 +267,27 @@
                 </a>
 
                 <!-- Projeto 3 -->
-                <a href="https://github.com/ricardo-vieira/projeto-3" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
+                <a href="https://github.com/Ricardo-dev-00/Estilo_Livre?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
-                            src="./images/projeto3.jpg" 
-                            alt="Projeto 3" 
+                            src="./images/projects/estilolivre.png" 
+                            alt="Estilo Livre - Landing Page Barbearia"
+                            loading="lazy" 
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         >
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Nome do Projeto 3</h3>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Estilo Livre</h3>
                         <p class="text-slate-600 dark:text-gray-300 leading-relaxed">
-                            Breve descrição do projeto explicando suas funcionalidades principais e tecnologias utilizadas.
+                            Landing page moderna e responsiva para barbearia desenvolvida no curso Front-End da EBAC. Design elegante e navegação intuitiva.
                         </p>
                         <!-- Tags -->
                         <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300">Node.js</span>
-                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-slate-100 text-slate-700 dark:bg-slate-900/30 dark:text-slate-300">Express</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300">HTML5</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300">CSS3</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">Bootstrap 5</span>
+                            <span class="px-3 py-1 text-sm font-medium rounded-full bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300">Font Awesome</span>
                         </div>
                         <div class="mt-4 flex items-center text-blue-600 dark:text-blue-400 font-semibold">
                             Ver no GitHub <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
@@ -262,8 +299,9 @@
                 <a href="https://github.com/ricardo-vieira/projeto-4" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
-                            src="./images/projeto4.jpg" 
-                            alt="Projeto 4" 
+                            src="./images/projects/projeto4.jpg" 
+                            alt="Projeto 4"
+                            loading="lazy" 
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         >
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
@@ -288,8 +326,9 @@
                 <a href="https://github.com/ricardo-vieira/projeto-5" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
-                            src="./images/projeto5.jpg" 
-                            alt="Projeto 5" 
+                            src="./images/projects/projeto5.jpg" 
+                            alt="Projeto 5"
+                            loading="lazy" 
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         >
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
@@ -315,8 +354,9 @@
                 <a href="https://github.com/ricardo-vieira/projeto-6" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
-                            src="./images/projeto6.jpg" 
-                            alt="Projeto 6" 
+                            src="./images/projects/projeto6.jpg" 
+                            alt="Projeto 6"
+                            loading="lazy" 
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         >
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
@@ -496,7 +536,35 @@
             </div>
         </div>
     </footer>
-    <script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ricardo Vieira",
+        "jobTitle": "Desenvolvedor Front-end",
+        "url": "https://ricardo-portfolio.vercel.app",
+        "sameAs": [
+            "https://www.linkedin.com/in/ricardo-vieira-dev/",
+            "https://github.com/Ricardo-dev-00"
+        ],
+        "email": "ricardo.dev.of@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "São Luís",
+            "addressRegion": "MA",
+            "addressCountry": "BR"
+        },
+        "knowsAbout": ["HTML5", "CSS3", "JavaScript", "React", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap"],
+        "workLocation": {
+            "@type": "Place",
+            "name": "Remoto"
+        }
+    }
+    </script>
+
+    <script defer>
         (function () {
             const storageKey = 'theme';
             const root = document.documentElement;
