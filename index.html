@@ -103,7 +103,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-slate-900 dark:bg-gradient-to-br dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+<body class="bg-gray-50 text-slate-900 dark:bg-black">
     <!-- Header -->
     <header class="parallax-header min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden" style="background-image: url('./images/header02.jpg'); background-size: cover; background-position: center;">
         <!-- Overlay escuro -->
@@ -148,7 +148,7 @@
     </header>
 
     <!-- Seção Sobre -->
-    <section id="sobre" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-100 dark:bg-slate-800/50 py-20">
+    <section id="sobre" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-100 dark:bg-black py-20">
         <div class="max-w-5xl w-full">
             <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-16 text-center">Sobre Mim</h2>
             
@@ -157,9 +157,9 @@
                 <div class="flex justify-center">
                     <div class="relative w-80 h-80">
                         <img 
-                            src="./images/perfil-ricardo.jpeg" 
+                            src="./images/perfil-ricardo2.jpeg" 
                             alt="Ricardo Vieira" 
-                            class="w-full h-full rounded-2xl object-cover shadow-2xl hover:scale-105 transition-transform duration-300"
+                            class="w-full h-full rounded-2xl object-cover object-top shadow-2xl hover:scale-105 transition-transform duration-300 ring-4 ring-blue-600 dark:ring-blue-400"
                         >
                     </div>
                 </div>
@@ -195,6 +195,96 @@
         </div>
     </section>
 
+    <!-- Seção Habilidades -->
+    <section id="habilidades" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 bg-gray-50 dark:bg-black">
+        <div class="max-w-6xl w-full">
+            <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6 text-center">Habilidades</h2>
+            <p class="text-slate-600 dark:text-gray-400 text-center text-lg mb-16 max-w-3xl mx-auto">
+                Tecnologias que uso no dia a dia, como aplico e em quais projetos já coloquei em prática.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Front-end -->
+                <div class="bg-white dark:bg-black/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-laptop-code text-blue-600 dark:text-blue-400 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Front-end</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-700 dark:text-gray-300">
+                        <li><strong>HTML5</strong> — marcação semântica, acessibilidade e SEO básico</li>
+                        <li><strong>CSS3</strong> — layouts responsivos (Flexbox/Grid), transições e mobile first</li>
+                        <li><strong>JavaScript (ES6+)</strong> — DOM, async/await, consumo de APIs REST</li>
+                    </ul>
+                </div>
+
+                <!-- JavaScript & Frameworks -->
+                <div class="bg-white dark:bg-black/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fab fa-react text-cyan-500 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">JavaScript & Frameworks</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-700 dark:text-gray-300">
+                        <li><strong>React</strong> — componentes funcionais, hooks (useState/useEffect), integração com APIs</li>
+                        <li><strong>Next.js</strong> — rotas, SSR/SSG e otimização; aplicado no <a class="text-blue-600 dark:text-blue-400 underline" href="https://github.com/Ricardo-dev-00/modulo-22/tree/main" target="_blank" rel="noopener noreferrer">Portal de Viagens</a></li>
+                        <li><strong>TypeScript</strong> — tipagem para robustez e manutenção</li>
+                    </ul>
+                </div>
+
+                <!-- Estilização & UI -->
+                <div class="bg-white dark:bg-black/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-palette text-pink-500 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Estilização & UI</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-700 dark:text-gray-300">
+                        <li><strong>Tailwind CSS</strong> — design rápido e consistente; usado em <a class="text-blue-600 dark:text-blue-400 underline" href="https://github.com/Ricardo-dev-00/Pet-Style?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">Pet&Style</a></li>
+                        <li><strong>Bootstrap 5</strong> — grids e componentes; aplicado em <a class="text-blue-600 dark:text-blue-400 underline" href="https://github.com/Ricardo-dev-00/Estilo_Livre?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">Estilo Livre</a></li>
+                        <li><strong>UI/UX básico</strong> — contraste, espaçamento e hierarquia visual</li>
+                    </ul>
+                </div>
+
+                <!-- Ferramentas -->
+                <div class="bg-white dark:bg-black/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-toolbox text-amber-500 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Ferramentas</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-700 dark:text-gray-300">
+                        <li><strong>Git & GitHub</strong> — versionamento, branches e PRs</li>
+                        <li><strong>VS Code / NPM / Vite</strong> — fluxo diário de desenvolvimento</li>
+                        <li><strong>Figma (básico)</strong> — leitura de layouts e handoff</li>
+                    </ul>
+                </div>
+
+                <!-- Boas Práticas -->
+                <div class="bg-white dark:bg-black/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-check-circle text-green-500 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Boas Práticas</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-700 dark:text-gray-300">
+                        <li>Código limpo, reutilização de componentes</li>
+                        <li>Responsividade, acessibilidade e performance</li>
+                        <li>Commits organizados e documentação breve</li>
+                    </ul>
+                </div>
+
+                <!-- Em Aprendizado / Futuro -->
+                <div class="bg-white dark:bg-black/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-graduation-cap text-purple-500 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Em Aprendizado</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-700 dark:text-gray-300">
+                        <li>Aprofundar Next.js (SSR/SSG avançado)</li>
+                        <li>Integração contínua e testes automatizados</li>
+                        <li>Explorar design systems e acessibilidade avançada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Seção Projetos -->
     <section id="projetos" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
         <div class="max-w-7xl w-full">
@@ -207,7 +297,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Projeto 1 -->
-                <a href="https://github.com/Ricardo-dev-00/modulo-22/tree/main" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
+                <a href="https://github.com/Ricardo-dev-00/modulo-22/tree/main" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
                             src="./images/projects/home_viagens.png" 
@@ -237,7 +327,7 @@
                 </a>
 
                 <!-- Projeto 2 -->
-                <a href="https://github.com/Ricardo-dev-00/Pet-Style?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
+                <a href="https://github.com/Ricardo-dev-00/Pet-Style?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
                             src="./images/projects/pet&style.png" 
@@ -267,7 +357,7 @@
                 </a>
 
                 <!-- Projeto 3 -->
-                <a href="https://github.com/Ricardo-dev-00/Estilo_Livre?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
+                <a href="https://github.com/Ricardo-dev-00/Estilo_Livre?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
                             src="./images/projects/estilolivre.png" 
@@ -296,7 +386,7 @@
                 </a>
 
                 <!-- Projeto 4 -->
-                <a href="https://github.com/ricardo-vieira/projeto-4" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
+                <a href="https://github.com/ricardo-vieira/projeto-4" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
                             src="./images/projects/projeto4.jpg" 
@@ -323,7 +413,7 @@
                 </a>
 
                 <!-- Projeto 5 -->
-                <a href="https://github.com/ricardo-vieira/projeto-5" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
+                <a href="https://github.com/ricardo-vieira/projeto-5" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
                             src="./images/projects/projeto5.jpg" 
@@ -351,7 +441,7 @@
                 </a>
 
                 <!-- Projeto 6 -->
-                <a href="https://github.com/ricardo-vieira/projeto-6" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
+                <a href="https://github.com/ricardo-vieira/projeto-6" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
                     <div class="relative overflow-hidden h-56">
                         <img 
                             src="./images/projects/projeto6.jpg" 
@@ -393,8 +483,155 @@
         </div>
     </section>
 
+    <!-- Seção Labs/Experimentos -->
+    <section id="labs" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-white dark:bg-black py-20">
+        <div class="max-w-6xl w-full">
+            <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6 text-center">Experimentos & Labs</h2>
+            <p class="text-slate-600 dark:text-gray-400 text-center text-lg mb-12 max-w-2xl mx-auto">
+                Espaço para explorar novas tecnologias, práticas constantes e experimentações. Aqui você encontra desde animações criativas até clones de interfaces conhecidas.
+            </p>
+
+            <!-- Grid de Labs -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+
+                <!-- Lab 1: CSS Animations -->
+                <a href="#" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl border border-slate-200 dark:border-slate-700">
+                    <div class="h-40 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center group-hover:shadow-inner">
+                        <i class="fas fa-wand-magic-sparkles text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Animações CSS</h3>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm mb-4">
+                            Exploração de animações criativas com CSS puro. Keyframes, transformations e efeitos visuais impressionantes.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">CSS</span>
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300">Animações</span>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400 font-semibold text-sm">
+                            Ver Código <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Lab 2: Componentes Reutilizáveis -->
+                <a href="#" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl border border-slate-200 dark:border-slate-700">
+                    <div class="h-40 bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center group-hover:shadow-inner">
+                        <i class="fas fa-layer-group text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Componentes Reutilizáveis</h3>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm mb-4">
+                            Biblioteca de componentes: botões, cards, modais e inputs. Código modular e bem estruturado para reutilização.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">HTML/CSS</span>
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300">JavaScript</span>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400 font-semibold text-sm">
+                            Ver Código <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Lab 3: Integração com APIs -->
+                <a href="#" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl border border-slate-200 dark:border-slate-700">
+                    <div class="h-40 bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center group-hover:shadow-inner">
+                        <i class="fas fa-plug text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Testes com APIs</h3>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm mb-4">
+                            Experimentação com APIs públicas: OpenWeather, SpaceX, REST API testing. Implementação de fetch e axios.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300">APIs</span>
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300">JavaScript</span>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400 font-semibold text-sm">
+                            Ver Código <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Lab 4: UI Clone - Spotify -->
+                <a href="#" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl border border-slate-200 dark:border-slate-700">
+                    <div class="h-40 bg-gradient-to-br from-green-600 to-green-400 flex items-center justify-center group-hover:shadow-inner">
+                        <i class="fab fa-spotify text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Clone Spotify UI</h3>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm mb-4">
+                            Recriação da interface do Spotify usando HTML, CSS e JavaScript. Layout responsivo e funcionalidades interativas.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300">UI Clone</span>
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-slate-200 text-slate-700 dark:bg-slate-700/50 dark:text-slate-300">Responsive</span>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400 font-semibold text-sm">
+                            Ver Código <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Lab 5: UI Clone - Netflix -->
+                <a href="#" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl border border-slate-200 dark:border-slate-700">
+                    <div class="h-40 bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center group-hover:shadow-inner">
+                        <i class="fas fa-film text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Clone Netflix UI</h3>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm mb-4">
+                            Recriação da interface do Netflix com catálogo de filmes, layout carrossel e dark mode nativo.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300">UI Clone</span>
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-slate-200 text-slate-700 dark:bg-slate-700/50 dark:text-slate-300">Carrossel</span>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400 font-semibold text-sm">
+                            Ver Código <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Lab 6: Práticas Front-end -->
+                <a href="#" class="group bg-white dark:bg-black/60 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl border border-slate-200 dark:border-slate-700">
+                    <div class="h-40 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center group-hover:shadow-inner">
+                        <i class="fas fa-flask-vial text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Práticas Front-end</h3>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm mb-4">
+                            Experimentos com performance, acessibilidade, SEO e boas práticas de desenvolvimento front-end.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300">Best Practices</span>
+                            <span class="px-2 py-1 text-xs font-medium rounded-full bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">Performance</span>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400 font-semibold text-sm">
+                            Ver Código <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Botão Explorar Mais Labs -->
+            <div class="text-center">
+                <a 
+                    href="https://github.com/Ricardo-dev-00?tab=repositories" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-block bg-slate-800 hover:bg-slate-700 border-2 border-blue-500 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                >
+                    <i class="fas fa-flask mr-2"></i>Explorar Mais Labs no GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Seção Contato -->
-    <section id="contato" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-100 dark:bg-slate-800/50 py-20">
+    <section id="contato" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-100 dark:bg-black py-20">
         <div class="max-w-4xl w-full">
             <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6 text-center">Entre em Contato</h2>
             <p class="text-slate-600 dark:text-gray-400 text-center text-lg mb-12 max-w-2xl mx-auto">
@@ -402,7 +639,7 @@
             </p>
 
             <!-- Formulário -->
-            <div class="bg-white dark:bg-slate-900/50 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-slate-200 dark:border-slate-700">
+            <div class="bg-white dark:bg-black/70 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-slate-200 dark:border-slate-800">
                 <form action="#" method="POST" class="space-y-6">
                     
                     <!-- Nome -->
@@ -413,7 +650,7 @@
                             id="nome" 
                             name="nome" 
                             required
-                            class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                            class="w-full px-4 py-3 bg-white dark:bg-black/60 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                             placeholder="Seu nome completo"
                         >
                     </div>
@@ -426,7 +663,7 @@
                             id="email" 
                             name="email" 
                             required
-                            class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                            class="w-full px-4 py-3 bg-white dark:bg-black/60 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                             placeholder="seu@email.com"
                         >
                     </div>
@@ -439,7 +676,7 @@
                             id="assunto" 
                             name="assunto" 
                             required
-                            class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                            class="w-full px-4 py-3 bg-white dark:bg-black/60 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                             placeholder="Sobre o que deseja falar?"
                         >
                     </div>
@@ -452,7 +689,7 @@
                             name="mensagem" 
                             rows="6" 
                             required
-                            class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                            class="w-full px-4 py-3 bg-white dark:bg-black/60 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
                             placeholder="Escreva sua mensagem aqui..."
                         ></textarea>
                     </div>
@@ -471,15 +708,15 @@
 
             <!-- Informações de Contato Alternativas -->
             <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-                <div class="bg-white dark:bg-slate-800/50 p-6 rounded-xl">
+                <div class="bg-white dark:bg-black/70 p-6 rounded-xl">
                     <i class="fas fa-envelope text-blue-600 dark:text-blue-400 text-3xl mb-3"></i>
                     <p class="text-slate-700 dark:text-gray-300">ricardo.dev.of@gmail.com</p>
                 </div>
-                <div class="bg-white dark:bg-slate-800/50 p-6 rounded-xl">
-                    <i class="fas fa-phone text-blue-600 dark:text-blue-400 text-3xl mb-3"></i>
+                <div class="bg-white dark:bg-black/70 p-6 rounded-xl">
+                    <i class="fab fa-whatsapp text-blue-600 dark:text-blue-400 text-3xl mb-3"></i>
                     <p class="text-slate-700 dark:text-gray-300">(98) 98588-1871</p>
                 </div>
-                <div class="bg-white dark:bg-slate-800/50 p-6 rounded-xl">
+                <div class="bg-white dark:bg-black/70 p-6 rounded-xl">
                     <i class="fas fa-map-marker-alt text-blue-600 dark:text-blue-400 text-3xl mb-3"></i>
                     <p class="text-slate-700 dark:text-gray-300">São Luís, MA</p>
                 </div>
@@ -488,7 +725,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 px-4 sm:px-6 lg:px-8">
+    <footer class="bg-gray-50 dark:bg-black border-t border-slate-200 dark:border-slate-800 py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 
