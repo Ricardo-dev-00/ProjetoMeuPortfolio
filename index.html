@@ -34,9 +34,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = { darkMode: 'class' };
+        // Animação de clique para botão de download
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('download-cv-btn');
+            if (btn) {
+                btn.addEventListener('click', function() {
+                    btn.classList.add('download-pulse');
+                    setTimeout(function() {
+                        btn.classList.remove('download-pulse');
+                    }, 500);
+                });
+            }
+        });
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" defer>
     <style>
+                /* Animação de pulso para botão WhatsApp */
+                .whatsapp-float {
+                    animation: pulse-whatsapp 1.5s infinite;
+                }
+                @keyframes pulse-whatsapp {
+                    0% { box-shadow: 0 2px 12px rgba(34,197,94,0.25), 0 0 0 0 rgba(34,197,94,0.4); }
+                    70% { box-shadow: 0 2px 12px rgba(34,197,94,0.25), 0 0 0 12px rgba(34,197,94,0); }
+                    100% { box-shadow: 0 2px 12px rgba(34,197,94,0.25), 0 0 0 0 rgba(34,197,94,0); }
+                }
+                /* Animação de clique para botão de download */
+                .download-pulse {
+                    animation: downloadPulse 0.5s;
+                }
+                @keyframes downloadPulse {
+                    0% { transform: scale(1); box-shadow: 0 0 0 0 #3b82f6; }
+                    50% { transform: scale(1.08); box-shadow: 0 0 16px 4px #3b82f6; }
+                    100% { transform: scale(1); box-shadow: 0 0 0 0 #3b82f6; }
+                }
         .parallax-header {
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -112,9 +142,11 @@
         <!-- Conteúdo do header com z-index -->
         <div class="absolute top-8 right-8 flex items-center gap-4 sm:gap-6 z-10">
             <!-- Botão Toggle Tema -->
-            <button id="theme-toggle" aria-label="Alternar tema" class="w-10 h-10 rounded-lg bg-white/80 dark:bg-slate-800/80 backdrop-blur border border-slate-200 dark:border-slate-700 flex items-center justify-center shadow hover:scale-105 transition duration-200">
-                <i id="icon-sun" class="fas fa-sun text-amber-500 text-lg hidden"></i>
-                <i id="icon-moon" class="fas fa-moon text-blue-400 text-lg hidden"></i>
+            <button id="theme-toggle" aria-label="Alternar tema" class="w-10 h-10 rounded-lg bg-white/80 dark:bg-slate-800/80 backdrop-blur flex items-center justify-center shadow hover:scale-105 transition duration-200">
+                <span class="relative flex items-center justify-center w-full h-full">
+                    <span id="icon-sun" class="fas fa-sun text-yellow-400 text-2xl drop-shadow-lg transition-opacity duration-300 hidden"></span>
+                    <span id="icon-moon" class="fas fa-moon text-indigo-400 text-2xl drop-shadow-lg transition-opacity duration-300 hidden"></span>
+                </span>
             </button>
             <!-- Ícones de Redes Sociais -->
             <a href="https://www.linkedin.com/in/ricardo-vieira-dev/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="text-white hover:text-white transition-all duration-500 transform hover:scale-110">
@@ -183,8 +215,9 @@
                     <!-- Botão Download Currículo -->
                     <div>
                         <a 
-                            href="./assets/documents/Ricardo_Vieira_CV.pdf" 
-                            download="Ricardo_Vieira_CV.pdf"
+                            id="download-cv-btn"
+                            href="./assets/documents/CV/cv-RicardoVieiraPenha.pdf" 
+                            download="cv-RicardoVieiraPenha.pdf"
                             class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                         >
                             <i class="fas fa-download mr-2"></i>Baixar Currículo
@@ -559,10 +592,10 @@
                         </div>
                         <!-- Botões -->
                         <div class="mt-auto flex gap-2">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
+                            <a href="https://ricardo-dev-00.github.io/teste-api/" target="_blank" rel="noopener noreferrer" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
                                 <i class="fas fa-external-link-alt mr-1"></i>Ver
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="flex-1 bg-slate-800 hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-600 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
+                            <a href="https://github.com/Ricardo-dev-00/teste-api" target="_blank" rel="noopener noreferrer" class="flex-1 bg-slate-800 hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-600 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
                                 <i class="fab fa-github mr-1"></i>Código
                             </a>
                         </div>
@@ -585,10 +618,10 @@
                         </div>
                         <!-- Botões -->
                         <div class="mt-auto flex gap-2">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
+                            <a href="https://ricardo-dev-00.github.io/teste-api/" target="_blank" rel="noopener noreferrer" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
                                 <i class="fas fa-external-link-alt mr-1"></i>Ver
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="flex-1 bg-slate-800 hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-600 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
+                            <a href="https://github.com/Ricardo-dev-00/teste-api" target="_blank" rel="noopener noreferrer" class="flex-1 bg-slate-800 hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-600 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
                                 <i class="fab fa-github mr-1"></i>Código
                             </a>
                         </div>
@@ -611,10 +644,10 @@
                         </div>
                         <!-- Botões -->
                         <div class="mt-auto flex gap-2">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
+                            <a href="https://ricardo-dev-00.github.io/teste-api/" target="_blank" rel="noopener noreferrer" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
                                 <i class="fas fa-external-link-alt mr-1"></i>Ver
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="flex-1 bg-slate-800 hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-600 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
+                            <a href="https://github.com/Ricardo-dev-00/teste-api" target="_blank" rel="noopener noreferrer" class="flex-1 bg-slate-800 hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-600 text-white text-center font-semibold py-2 px-3 rounded text-sm transition-all duration-300 transform hover:scale-105">
                                 <i class="fab fa-github mr-1"></i>Código
                             </a>
                         </div>
@@ -960,4 +993,11 @@
         })();
     </script>
     </body>
+        <!-- Botão Flutuante WhatsApp -->
+        <a href="https://wa.me/5598999999999" target="_blank" rel="noopener noreferrer" aria-label="Fale comigo no WhatsApp"
+        href="https://wa.me/55989885881871" target="_blank" rel="noopener noreferrer" aria-label="Fale comigo no WhatsApp"
+        href="https://wa.me/5598985881871" target="_blank" rel="noopener noreferrer" aria-label="Fale comigo no WhatsApp"
+        class="whatsapp-float fixed bottom-5 right-5 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-xl w-14 h-14 flex items-center justify-center transition-all duration-300">
+         <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
     </html>
